@@ -1,0 +1,9 @@
+services:
+  clawli-relay:
+    build: .
+    container_name: clawli-relay
+    restart: unless-stopped
+    ports:
+      - "8900:8900"
+    # 公网部署务必设置令牌（改掉下面这串），手机/PC 桥接端都要带同样的 --token
+    command: ["python", "relay_server.py", "--host", "0.0.0.0", "--port", "8900", "--auth-token", "${CLAWLI_RELAY_TOKEN:-change-me}"]
