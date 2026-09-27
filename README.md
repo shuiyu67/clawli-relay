@@ -1,6 +1,6 @@
 # Clawli 云中继（clawli-relay）
 
-把「手机 ↔ 电脑上的小狸（xiaoli-cli Clawli）」的 WebSocket 流量经自建服务器**原样转发**，穿透 NAT——外网也能用。
+把「手机 ↔ 电脑上的 Lix CLI（Clawli）」的 WebSocket 流量经自建服务器**原样转发**，穿透 NAT——外网也能用。
 
 ```
 局域网模式:  手机 ──────────────ws──────────────▶ 电脑 Clawli (127.0.0.1:9079)
